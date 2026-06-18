@@ -65,7 +65,17 @@ body {
   height: 8px;
 }
 
-.bracket-scroll::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 999px;
+@keyframes score-flash {
+  0% {
+    color: var(--live);
+    transform: scale(1.2);
+  }
+  100% {
+    color: var(--text);
+    transform: scale(1);
+  }
+}
+
+.score-flash {
+  animation: score-flash 0.5s ease-out;
 }

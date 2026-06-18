@@ -1,7 +1,13 @@
 import type { GroupStanding } from "@/lib/types";
 import { flagEmoji } from "@/lib/teams";
 
-export function GroupTables({ groups }: { groups: GroupStanding[] }) {
+export function GroupTables({
+  groups,
+  highlightTeam,
+}: {
+  groups: GroupStanding[];
+  highlightTeam?: string | null;
+}) {
   return (
     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       {groups.map((group) => (
@@ -27,7 +33,13 @@ export function GroupTables({ groups }: { groups: GroupStanding[] }) {
                   <tr
                     key={team.team}
                     className={`border-t border-[var(--border)]/60 ${
-                      index < 2 ? "text-white" : index === 2 ? "text-[var(--gold)]" : "text-[var(--muted)]"
+                      team.team === highlightTeam
+                        ? "bg-[var(--accent)]/10 text-[var(--accent)]"
+                        : index < 2
+                          ? "text-white"
+                          : index === 2
+                            ? "text-[var(--gold)]"
+                            : "text-[var(--muted)]"
                     }`}
                   >
                     <td className="py-2 pr-2 font-mono">{team.position}</td>

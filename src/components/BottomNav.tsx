@@ -1,11 +1,12 @@
 "use client";
 
-export type TabId = "groups" | "live" | "bracket" | "matches";
+export type TabId = "groups" | "live" | "bracket" | "matches" | "analysis";
 
 const TABS: { id: TabId; label: string; icon: string }[] = [
   { id: "groups", label: "Gruppen", icon: "▦" },
   { id: "live", label: "Live", icon: "●" },
   { id: "bracket", label: "Baum", icon: "⎇" },
+  { id: "analysis", label: "Analyse", icon: "◈" },
   { id: "matches", label: "Spiele", icon: "☰" },
 ];
 
@@ -19,7 +20,7 @@ export function BottomNav({ active, onChange, liveCount }: BottomNavProps) {
   return (
     <>
       <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--border)] bg-[color-mix(in_srgb,var(--bg)_94%,transparent)] backdrop-blur-xl lg:hidden">
-        <div className="mx-auto grid max-w-lg grid-cols-4">
+        <div className="mx-auto grid max-w-lg grid-cols-5">
           {TABS.map((tab) => (
             <button
               key={tab.id}

@@ -10,6 +10,12 @@ Live-Webapp für die FIFA WM 2026 mit dynamischem Turnierbaum, Gruppenständen u
 - **Responsive UI**: Desktop mit Pan/Zoom-Gesamtbild, Mobile mit Runden-Swiper
 - **Spieldetails** mit Thumbnails und externen Highlight-Links
 
+### Phase 3 – Live & Analyse
+- **Qualifikations-Analyse** simuliert alle verbleibenden Gruppenszenarien (inkl. Annex C)
+- **Team folgen** – Highlight in Gruppen, Baum und Spielen (localStorage)
+- **Score-Animationen** bei Live-Toren (Framer Motion)
+- **PWA** – installierbar über Manifest & App-Icon
+
 ## Entwicklung
 
 ```bash

@@ -7,10 +7,11 @@ import { BracketMatchCard } from "@/components/bracket/BracketMatchCard";
 
 interface RoundSwiperProps {
   bracket: BracketData;
+  highlightTeam?: string | null;
   onSelectMatch?: (match: BracketMatch) => void;
 }
 
-export function RoundSwiper({ bracket, onSelectMatch }: RoundSwiperProps) {
+export function RoundSwiper({ bracket, highlightTeam, onSelectMatch }: RoundSwiperProps) {
   const rounds = useMemo(
     () =>
       ROUND_ORDER.map((key) => ({
@@ -72,7 +73,7 @@ export function RoundSwiper({ bracket, onSelectMatch }: RoundSwiperProps) {
 
       <div className="grid gap-3">
         {current.matches.map((match) => (
-          <BracketMatchCard key={match.id} match={match} onSelect={onSelectMatch} />
+          <BracketMatchCard key={match.id} match={match} highlightTeam={highlightTeam} onSelect={onSelectMatch} />
         ))}
       </div>
 

@@ -9,9 +9,10 @@ interface MatchListProps {
   title: string;
   emptyText?: string;
   onSelect?: (match: TournamentMatch) => void;
+  highlightTeams?: string[];
 }
 
-export function MatchList({ matches, title, emptyText, onSelect }: MatchListProps) {
+export function MatchList({ matches, title, emptyText, onSelect, highlightTeams = [] }: MatchListProps) {
   return (
     <section>
       <div className="mb-4 flex items-center justify-between">
@@ -25,7 +26,12 @@ export function MatchList({ matches, title, emptyText, onSelect }: MatchListProp
       ) : (
         <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {matches.map((match) => (
-            <MatchCard key={match.id} match={match} onSelect={onSelect} />
+            <MatchCard
+              key={match.id}
+              match={match}
+              onSelect={onSelect}
+              highlightTeams={highlightTeams}
+            />
           ))}
         </div>
       )}

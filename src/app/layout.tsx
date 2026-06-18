@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "WM 2026 Live | Turnierbaum & Gruppen",
   description:
     "Live-Turnierbaum der FIFA WM 2026 mit dynamischer Annex-C-Berechnung, Gruppenständen und Spielübersicht.",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "WM 2026 Live",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

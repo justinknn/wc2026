@@ -2,17 +2,25 @@
 
 import { useMemo, useState } from "react";
 import type { TournamentMatch } from "@/lib/types";
+import { AnalysisPanel } from "@/components/AnalysisPanel";
 import { BottomNav, type TabId } from "@/components/BottomNav";
 import { BracketView } from "@/components/bracket/BracketView";
 import { GroupTables } from "@/components/GroupTables";
 import { Header } from "@/components/Header";
 import { MatchDetail, MatchList } from "@/components/MatchList";
+import { useFollowedTeam } from "@/hooks/useFollowedTeam";
 import { useTournamentData } from "@/hooks/useTournamentData";
 
 export function TournamentApp() {
   const { data, isLoading, error, isFetching } = useTournamentData();
   const [tab, setTab] = useState<TabId>("groups");
   const [selectedMatch, setSelectedMatch] = useState<TournamentMatch | null>(null);
+  const { followedTeam } = useFollowedTeam();
+
+  const highlightTeams = useMemo(
+    () => (followedTeam ? [followedTeam] : []),
+    [followedTeam],
+  );
 
   const upcoming = useMemo(
     () => (data?.matches ?? []).filter((m) => m.status === "scheduled").slice(0, 12),
@@ -32,6 +40,7 @@ export function TournamentApp() {
     groups: "Gruppen",
     live: "Live",
     bracket: "Baum",
+    analysis: "Analyse",
     matches: "Spiele",
   }[tab];
 
@@ -59,7 +68,7 @@ export function TournamentApp() {
               <p className="mb-4 text-xs text-[var(--muted)]">Aktualisiere im Hintergrund …</p>
             )}
 
-            {tab === "groups" && <GroupTables groups={data.groups} />}
+            {tab === "groups" && <GroupTables groups={data.groups} highlightTeam={followedTeam} />}
 
             {tab === "live" && (
               <MatchList
@@ -67,15 +76,19 @@ export function TournamentApp() {
                 title="Live-Spiele"
                 emptyText="Gerade läuft kein Spiel. Die Daten werden alle 30 Sekunden aktualisiert."
                 onSelect={setSelectedMatch}
+                highlightTeams={highlightTeams}
               />
             )}
 
             {tab === "bracket" && (
               <BracketView
                 bracket={data.bracket}
+                highlightTeam={followedTeam}
                 onSelectMatch={(match) => match.liveData && setSelectedMatch(match.liveData)}
               />
             )}
+
+            {tab === "analysis" && <AnalysisPanel scenarios={data.scenarios ?? []} />}
 
             {tab === "matches" && (
               <div className="space-y-8">
@@ -83,11 +96,13 @@ export function TournamentApp() {
                   matches={upcoming}
                   title="Kommende Spiele"
                   onSelect={setSelectedMatch}
+                  highlightTeams={highlightTeams}
                 />
                 <MatchList
                   matches={finished}
                   title="Ergebnisse"
                   onSelect={setSelectedMatch}
+                  highlightTeams={highlightTeams}
                 />
               </div>
             )}

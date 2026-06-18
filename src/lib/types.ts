@@ -102,12 +102,35 @@ export interface BracketData {
   isProjected: boolean;
 }
 
+export type ScenarioStatus = "qualified" | "likely" | "in_contention" | "unlikely" | "eliminated";
+
+export interface TeamScenario {
+  team: string;
+  group: GroupId;
+  position: number;
+  points: number;
+  played: number;
+  remaining: number;
+  status: ScenarioStatus;
+  summary: string;
+  scenarios: string[];
+  qualificationChance: number;
+  knockoutPath?: string;
+  fairPlayNote?: string;
+  nextMatch?: {
+    opponent: string;
+    kickoff: string;
+    isHome: boolean;
+  };
+}
+
 export interface TournamentData {
   updatedAt: string;
   groups: GroupStanding[];
   matches: TournamentMatch[];
   liveMatches: TournamentMatch[];
   bracket: BracketData;
+  scenarios: TeamScenario[];
 }
 
 export interface KnockoutTemplate {

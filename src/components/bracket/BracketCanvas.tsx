@@ -7,10 +7,11 @@ import { BracketMatchCard } from "@/components/bracket/BracketMatchCard";
 
 interface BracketCanvasProps {
   bracket: BracketData;
+  highlightTeam?: string | null;
   onSelectMatch?: (match: BracketMatch) => void;
 }
 
-export function BracketCanvas({ bracket, onSelectMatch }: BracketCanvasProps) {
+export function BracketCanvas({ bracket, highlightTeam, onSelectMatch }: BracketCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(0.72);
   const [offset, setOffset] = useState({ x: 24, y: 24 });
@@ -119,7 +120,7 @@ export function BracketCanvas({ bracket, onSelectMatch }: BracketCanvasProps) {
               >
                 {round.matches.map((match) => (
                   <div key={match.id} className="relative">
-                    <BracketMatchCard match={match} onSelect={onSelectMatch} />
+                    <BracketMatchCard match={match} highlightTeam={highlightTeam} onSelect={onSelectMatch} />
                     {roundIndex < rounds.length - 1 && (
                       <span className="absolute right-[-18px] top-1/2 hidden h-px w-4 bg-[var(--border)] lg:block" />
                     )}
