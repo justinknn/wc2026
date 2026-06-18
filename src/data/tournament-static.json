@@ -1,0 +1,366 @@
+{
+  "groups": {
+    "A": [
+      "Mexico",
+      "South Africa",
+      "South Korea",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Bosnia-Herzegovina",
+      "Qatar",
+      "Switzerland"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Haiti",
+      "Scotland"
+    ],
+    "D": [
+      "USA",
+      "Paraguay",
+      "Australia",
+      "Turkiye"
+    ],
+    "E": [
+      "Germany",
+      "Curacao",
+      "Cote d'Ivoire",
+      "Ecuador"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Cabo Verde",
+      "Saudi Arabia",
+      "Uruguay"
+    ],
+    "I": [
+      "France",
+      "Senegal",
+      "Iraq",
+      "Norway"
+    ],
+    "J": [
+      "Argentina",
+      "Algeria",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "DR Congo",
+      "Uzbekistan",
+      "Colombia"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "knockout": [
+    {
+      "ground": "Los Angeles (Inglewood)",
+      "id": "m73",
+      "kickoff": "2026-06-28T12:00:00-07:00",
+      "num": 73,
+      "round": "Round of 32",
+      "slot1": "2A",
+      "slot2": "2B"
+    },
+    {
+      "ground": "Boston (Foxborough)",
+      "id": "m74",
+      "kickoff": "2026-06-29T16:30:00-04:00",
+      "num": 74,
+      "round": "Round of 32",
+      "slot1": "1E",
+      "slot2": "3A/B/C/D/F"
+    },
+    {
+      "ground": "Monterrey (Guadalupe)",
+      "id": "m75",
+      "kickoff": "2026-06-29T19:00:00-06:00",
+      "num": 75,
+      "round": "Round of 32",
+      "slot1": "1F",
+      "slot2": "2C"
+    },
+    {
+      "ground": "Houston",
+      "id": "m76",
+      "kickoff": "2026-06-29T12:00:00-05:00",
+      "num": 76,
+      "round": "Round of 32",
+      "slot1": "1C",
+      "slot2": "2F"
+    },
+    {
+      "ground": "New York/New Jersey (East Rutherford)",
+      "id": "m77",
+      "kickoff": "2026-06-30T17:00:00-04:00",
+      "num": 77,
+      "round": "Round of 32",
+      "slot1": "1I",
+      "slot2": "3C/D/F/G/H"
+    },
+    {
+      "ground": "Dallas (Arlington)",
+      "id": "m78",
+      "kickoff": "2026-06-30T12:00:00-05:00",
+      "num": 78,
+      "round": "Round of 32",
+      "slot1": "2E",
+      "slot2": "2I"
+    },
+    {
+      "ground": "Mexico City",
+      "id": "m79",
+      "kickoff": "2026-06-30T19:00:00-06:00",
+      "num": 79,
+      "round": "Round of 32",
+      "slot1": "1A",
+      "slot2": "3C/E/F/H/I"
+    },
+    {
+      "ground": "Atlanta",
+      "id": "m80",
+      "kickoff": "2026-07-01T12:00:00-04:00",
+      "num": 80,
+      "round": "Round of 32",
+      "slot1": "1L",
+      "slot2": "3E/H/I/J/K"
+    },
+    {
+      "ground": "San Francisco Bay Area (Santa Clara)",
+      "id": "m81",
+      "kickoff": "2026-07-01T17:00:00-07:00",
+      "num": 81,
+      "round": "Round of 32",
+      "slot1": "1D",
+      "slot2": "3B/E/F/I/J"
+    },
+    {
+      "ground": "Seattle",
+      "id": "m82",
+      "kickoff": "2026-07-01T13:00:00-07:00",
+      "num": 82,
+      "round": "Round of 32",
+      "slot1": "1G",
+      "slot2": "3A/E/H/I/J"
+    },
+    {
+      "ground": "Toronto",
+      "id": "m83",
+      "kickoff": "2026-07-02T19:00:00-04:00",
+      "num": 83,
+      "round": "Round of 32",
+      "slot1": "2K",
+      "slot2": "2L"
+    },
+    {
+      "ground": "Los Angeles (Inglewood)",
+      "id": "m84",
+      "kickoff": "2026-07-02T12:00:00-07:00",
+      "num": 84,
+      "round": "Round of 32",
+      "slot1": "1H",
+      "slot2": "2J"
+    },
+    {
+      "ground": "Vancouver",
+      "id": "m85",
+      "kickoff": "2026-07-02T20:00:00-07:00",
+      "num": 85,
+      "round": "Round of 32",
+      "slot1": "1B",
+      "slot2": "3E/F/G/I/J"
+    },
+    {
+      "ground": "Miami (Miami Gardens)",
+      "id": "m86",
+      "kickoff": "2026-07-03T18:00:00-04:00",
+      "num": 86,
+      "round": "Round of 32",
+      "slot1": "1J",
+      "slot2": "2H"
+    },
+    {
+      "ground": "Kansas City",
+      "id": "m87",
+      "kickoff": "2026-07-03T20:30:00-05:00",
+      "num": 87,
+      "round": "Round of 32",
+      "slot1": "1K",
+      "slot2": "3D/E/I/J/L"
+    },
+    {
+      "ground": "Dallas (Arlington)",
+      "id": "m88",
+      "kickoff": "2026-07-03T13:00:00-05:00",
+      "num": 88,
+      "round": "Round of 32",
+      "slot1": "2D",
+      "slot2": "2G"
+    },
+    {
+      "ground": "Philadelphia",
+      "id": "m89",
+      "kickoff": "2026-07-04T17:00:00-04:00",
+      "num": 89,
+      "round": "Round of 16",
+      "slot1": "W74",
+      "slot2": "W77"
+    },
+    {
+      "ground": "Houston",
+      "id": "m90",
+      "kickoff": "2026-07-04T12:00:00-05:00",
+      "num": 90,
+      "round": "Round of 16",
+      "slot1": "W73",
+      "slot2": "W75"
+    },
+    {
+      "ground": "New York/New Jersey (East Rutherford)",
+      "id": "m91",
+      "kickoff": "2026-07-05T16:00:00-04:00",
+      "num": 91,
+      "round": "Round of 16",
+      "slot1": "W76",
+      "slot2": "W78"
+    },
+    {
+      "ground": "Mexico City",
+      "id": "m92",
+      "kickoff": "2026-07-05T18:00:00-06:00",
+      "num": 92,
+      "round": "Round of 16",
+      "slot1": "W79",
+      "slot2": "W80"
+    },
+    {
+      "ground": "Dallas (Arlington)",
+      "id": "m93",
+      "kickoff": "2026-07-06T14:00:00-05:00",
+      "num": 93,
+      "round": "Round of 16",
+      "slot1": "W83",
+      "slot2": "W84"
+    },
+    {
+      "ground": "Seattle",
+      "id": "m94",
+      "kickoff": "2026-07-06T17:00:00-07:00",
+      "num": 94,
+      "round": "Round of 16",
+      "slot1": "W81",
+      "slot2": "W82"
+    },
+    {
+      "ground": "Atlanta",
+      "id": "m95",
+      "kickoff": "2026-07-07T12:00:00-04:00",
+      "num": 95,
+      "round": "Round of 16",
+      "slot1": "W86",
+      "slot2": "W88"
+    },
+    {
+      "ground": "Vancouver",
+      "id": "m96",
+      "kickoff": "2026-07-07T13:00:00-07:00",
+      "num": 96,
+      "round": "Round of 16",
+      "slot1": "W85",
+      "slot2": "W87"
+    },
+    {
+      "ground": "Boston (Foxborough)",
+      "id": "m97",
+      "kickoff": "2026-07-09T16:00:00-04:00",
+      "num": 97,
+      "round": "Quarter-final",
+      "slot1": "W89",
+      "slot2": "W90"
+    },
+    {
+      "ground": "Los Angeles (Inglewood)",
+      "id": "m98",
+      "kickoff": "2026-07-10T12:00:00-07:00",
+      "num": 98,
+      "round": "Quarter-final",
+      "slot1": "W93",
+      "slot2": "W94"
+    },
+    {
+      "ground": "Miami (Miami Gardens)",
+      "id": "m99",
+      "kickoff": "2026-07-11T17:00:00-04:00",
+      "num": 99,
+      "round": "Quarter-final",
+      "slot1": "W91",
+      "slot2": "W92"
+    },
+    {
+      "ground": "Kansas City",
+      "id": "m100",
+      "kickoff": "2026-07-11T20:00:00-05:00",
+      "num": 100,
+      "round": "Quarter-final",
+      "slot1": "W95",
+      "slot2": "W96"
+    },
+    {
+      "ground": "Dallas (Arlington)",
+      "id": "m101",
+      "kickoff": "2026-07-14T14:00:00-05:00",
+      "num": 101,
+      "round": "Semi-final",
+      "slot1": "W97",
+      "slot2": "W98"
+    },
+    {
+      "ground": "Atlanta",
+      "id": "m102",
+      "kickoff": "2026-07-15T15:00:00-04:00",
+      "num": 102,
+      "round": "Semi-final",
+      "slot1": "W99",
+      "slot2": "W100"
+    },
+    {
+      "ground": "Miami (Miami Gardens)",
+      "id": "m103",
+      "kickoff": "2026-07-18T17:00:00-04:00",
+      "num": 103,
+      "round": "Match for third place",
+      "slot1": "L101",
+      "slot2": "L102"
+    },
+    {
+      "ground": "New York/New Jersey (East Rutherford)",
+      "id": "m104",
+      "kickoff": "2026-07-19T15:00:00-04:00",
+      "num": 104,
+      "round": "Final",
+      "slot1": "W101",
+      "slot2": "W102"
+    }
+  ]
+}

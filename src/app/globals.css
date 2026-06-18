@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #070d14;
+  --surface: #0f1a24;
+  --surface-2: #152433;
+  --border: #243447;
+  --text: #e8f0f7;
+  --muted: #8fa3b8;
+  --accent: #22c55e;
+  --gold: #f5c451;
+  --live: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at top, #102033 0%, var(--bg) 45%);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+.glass {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.live-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.bracket-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.bracket-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.bracket-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
